@@ -76,8 +76,12 @@
     </div>
     <!-- Content from the Blue bar to the 3 divider thing ends -->
     <!-- audio -->
-    <audio controls autoplay>
+    <audio id="audio1" controls autoplay>
       <source src="https://github.com/vnsugadev/test/raw/refs/heads/main/innmer_duberil.mp3" type="audio/mp3">
+    </audio> Full Song 
+    <audio id="audio2" controls>
+      <source src="https://github.com/vnsugadev/test/raw/refs/heads/main/gehgeh_moor_full.mp3" type="audio/mp3">
+      </source>
     </audio>
     <!-- audio over -->
     <!-- One picture -->
@@ -87,4 +91,19 @@
     </div>
     <!-- One picture ends -->
   </body>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const audio1 = document.getElementById("audio1");
+  const audio2 = document.getElementById("audio2");
+
+  // Add event listener to check when the first audio ends
+  audio1.addEventListener("ended", function () {
+    // Play the second audio
+    audio2.play();
+  });
+});
+
+</script>
+  
+  
 </html>
