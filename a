@@ -1,0 +1,133 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Parody Page</title>
+<style>
+  body {
+    background-color: yellow;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 0 20px;
+    gap: 20px;
+  }
+
+  .gif {
+    flex-basis: 35%;
+    max-width: 35vw;
+    visibility: hidden;
+  }
+
+  .gif img {
+    width: 100%;
+    height: auto;
+  }
+
+  .middle {
+    flex-grow: 1;
+  }
+
+  .flashing-text {
+    font-size: 48px;
+    color: cyan;
+    animation: flash 0.5s infinite alternate;
+    margin-bottom: 20px;
+  }
+
+  @keyframes flash {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+
+  audio {
+    width: 300px;
+  }
+
+
+  button {
+    font-size: 24px;
+    padding: 10px 20px;
+    background-color: cyan;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: magenta;
+    color: white;
+  }
+
+
+
+
+
+
+
+
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+  <div id="leftGif" class="gif">
+    <img src="magik.gif" alt="Left GIF">
+  </div>
+
+  <div class="middle">
+    <img src="https://i.imgur.com/EUM42d2.png" alt="GayGayAhMoor" style="max-width: 300px; height: auto; margin-bottom: 20px;">
+    
+    <button onclick="document.getElementById('audio').play()">▶️ Play</button>
+    <div class="flashing-text" id="flashingText">GET READY!</div>
+    <audio id="audio" controls autoplay>
+      <source src="ggamoor.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+<a href="/more_gga.html"><i>More GGA Maur Audio Edits</i></a>
+
+
+  <div id="rightGif" class="gif">
+    <img src="magik.gif" alt="Right GIF">
+  </div>
+</div>
+
+
+
+<script>
+  const audio = document.getElementById('audio');
+  const leftGif = document.getElementById('leftGif');
+  const rightGif = document.getElementById('rightGif');
+  const flashingText = document.getElementById('flashingText');
+
+  audio.addEventListener('play', () => {
+    leftGif.style.visibility = 'visible';
+    rightGif.style.visibility = 'visible';
+    flashingText.textContent = 'GAGI MAURO!!!!!!!!!!!!!';
+  });
+
+  audio.addEventListener('pause', () => {
+    leftGif.style.visibility = 'hidden';
+    rightGif.style.visibility = 'hidden';
+    flashingText.textContent = 'gehgehahmoor';
+  });
+</script>
+
+</body>
+</html>
+
