@@ -57,17 +57,37 @@ Run the bot with default subreddits:
 python reddit_ban_tracker.py
 ```
 
-### Custom Subreddits
+### Enhanced CLI Usage
 
-Specify custom subreddits to monitor (comma-separated):
+For more control, use the enhanced CLI interface:
 ```bash
-python reddit_ban_tracker.py "subreddit1,subreddit2,subreddit3"
+python cli.py --help
 ```
 
-### Example
+#### CLI Examples
 
 ```bash
-python reddit_ban_tracker.py "announcements,reddit,help"
+# Monitor default subreddits
+python cli.py
+
+# Monitor specific subreddits
+python cli.py -s "announcements,help,askreddit"
+
+# Set custom fetch limit
+python cli.py --limit 100
+
+# Use custom config and storage files
+python cli.py --config mybot.env --storage my_bans.json
+
+# Monitor askreddit with custom limit
+python cli.py --subreddits askreddit --limit 50
+```
+
+### Basic Script Usage
+
+Alternatively, use the basic script directly:
+```bash
+python reddit_ban_tracker.py "subreddit1,subreddit2,subreddit3"
 ```
 
 ## Configuration
@@ -164,8 +184,11 @@ Date: 2024-01-15 14:32:10
 ```
 .
 ├── reddit_ban_tracker.py    # Main bot script
+├── cli.py                  # Enhanced CLI interface
+├── test_bot.py             # Test script for verification
 ├── requirements.txt         # Python dependencies
 ├── .env                    # Configuration file (create this)
+├── .env.example            # Configuration template
 ├── banned_users.json       # Ban history (created automatically)
 ├── reddit_ban_tracker.log  # Log file (created automatically)
 └── README.md              # This file
