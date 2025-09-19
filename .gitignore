@@ -4,6 +4,8 @@
 # Bot generated files
 banned_users.json
 reddit_ban_tracker.log
+mute_banned_users.log
+processed_conversations.json
 
 # Python cache files
 __pycache__/
