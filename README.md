@@ -2,14 +2,35 @@
 
 A Python bot that uses PRAW (Python Reddit API Wrapper) to fetch and track bans from Reddit subreddits. The bot maintains a history of previously seen bans and displays only newly discovered ones.
 
+# Reddit Ban Tracker & Mute Bot
+
+This repository contains two main components:
+
+1. **Reddit Ban Tracker** (`reddit_ban_tracker.py`) - Tracks and displays new bans from Reddit subreddits
+2. **Mute Banned Users Bot** (`mute_banned_users.py`) - Automatically responds to and mutes users banned for specific rule violations
+
 ## Features
 
+### Reddit Ban Tracker
 - 🔍 Fetches ban information from Reddit using PRAW
 - 💾 Stores previously seen bans in JSON format
 - 🆕 Identifies and displays only new bans
 - 🛡️ Robust error handling and logging
 - ⚙️ Configurable via environment variables
 - 📝 Comprehensive logging to both file and console
+
+### Mute Banned Users Bot
+- 🚫 Automatically processes modmail from users banned for specific rule violations (default: Rule 7)
+- 💬 Sends automated responses to banned users
+- 🔇 Automatically mutes modmail conversations 
+- ⚡ Optimized performance with conversation caching
+- 🏗️ Clean class-based architecture with proper separation of concerns
+- 🛡️ Comprehensive error handling and logging
+- ⚙️ Configurable via environment variables with no hardcoded values
+- 🔒 Secure configuration management
+- 📊 Detailed tracking and statistics
+- 📖 Full type hints and documentation
+- 🧪 Comprehensive test suite
 
 ## Prerequisites
 
@@ -50,14 +71,18 @@ A Python bot that uses PRAW (Python Reddit API Wrapper) to fetch and track bans 
 
 ## Usage
 
-### Basic Usage
+## Usage
+
+### Reddit Ban Tracker
+
+#### Basic Usage
 
 Run the bot with default subreddits:
 ```bash
 python reddit_ban_tracker.py
 ```
 
-### Enhanced CLI Usage
+#### Enhanced CLI Usage
 
 For more control, use the enhanced CLI interface:
 ```bash
@@ -83,11 +108,43 @@ python cli.py --config mybot.env --storage my_bans.json
 python cli.py --subreddits askreddit --limit 50
 ```
 
-### Basic Script Usage
+#### Basic Script Usage
 
 Alternatively, use the basic script directly:
 ```bash
 python reddit_ban_tracker.py "subreddit1,subreddit2,subreddit3"
+```
+
+### Mute Banned Users Bot
+
+#### Basic Usage
+
+Run the mute bot with default settings (dry run mode):
+```bash
+python mute_banned_users.py --dry-run
+```
+
+#### Production Usage
+
+Run the bot to actually process and mute conversations:
+```bash
+python mute_banned_users.py --subreddits "yoursubreddit" --rule "Rule 7"
+```
+
+#### CLI Examples
+
+```bash
+# Dry run to test configuration
+python mute_banned_users.py --subreddits "announcements,help" --dry-run
+
+# Process Rule 7 violations in specific subreddits
+python mute_banned_users.py -s "yoursubreddit" --rule "Rule 7"
+
+# Use custom configuration and cache files
+python mute_banned_users.py --config mybot.env --cache custom_cache.json
+
+# Process different rule violations
+python mute_banned_users.py -s "yoursubreddit" --rule "Rule 8"
 ```
 
 ## Configuration
@@ -183,15 +240,19 @@ Date: 2024-01-15 14:32:10
 
 ```
 .
-├── reddit_ban_tracker.py    # Main bot script
-├── cli.py                  # Enhanced CLI interface
-├── test_bot.py             # Test script for verification
-├── requirements.txt         # Python dependencies
-├── .env                    # Configuration file (create this)
-├── .env.example            # Configuration template
-├── banned_users.json       # Ban history (created automatically)
-├── reddit_ban_tracker.log  # Log file (created automatically)
-└── README.md              # This file
+├── reddit_ban_tracker.py       # Main ban tracking bot script
+├── mute_banned_users.py        # Optimized bot for muting banned users
+├── cli.py                      # Enhanced CLI interface for ban tracker
+├── test_bot.py                 # Test script for ban tracker
+├── test_mute_bot.py            # Comprehensive test suite for mute bot
+├── requirements.txt            # Python dependencies
+├── .env                        # Configuration file (create this)
+├── .env.example                # Configuration template
+├── banned_users.json           # Ban history (created automatically)
+├── processed_conversations.json # Conversation cache for mute bot (created automatically)
+├── reddit_ban_tracker.log      # Ban tracker log file (created automatically)
+├── mute_banned_users.log       # Mute bot log file (created automatically)
+└── README.md                   # This file
 ```
 
 ### Contributing

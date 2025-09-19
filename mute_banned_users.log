@@ -1,0 +1,65 @@
+2025-09-19 10:50:30,565 - MuteBannedUsersBot - WARNING - No Reddit username/password provided, using read-only access
+2025-09-19 10:50:30,565 - MuteBannedUsersBot - INFO - Connected to Reddit as: <Mock name='mock.user.me().name' id='140574158114832'>
+2025-09-19 10:50:30,565 - MuteBannedUsersBot - INFO - MuteBannedUsersBot initialized successfully
+2025-09-19 10:50:30,565 - MuteBannedUsersBot - INFO - Starting MuteBannedUsersBot...
+2025-09-19 10:50:30,565 - MuteBannedUsersBot - INFO - Running in DRY RUN mode - no actual actions will be taken
+2025-09-19 10:50:30,565 - MuteBannedUsersBot - INFO - Processing r/testsubreddit
+2025-09-19 10:50:30,566 - MuteBannedUsersBot - WARNING - Cannot access mod log for r/testsubreddit: bad escape \s at position 4
+2025-09-19 10:50:30,566 - MuteBannedUsersBot - WARNING - Cannot access ban list for r/testsubreddit: 'Mock' object is not iterable
+2025-09-19 10:50:30,566 - MuteBannedUsersBot - INFO - Found 0 recent Rule 7 bans in r/testsubreddit
+2025-09-19 10:50:30,566 - MuteBannedUsersBot - INFO - No recent Rule 7 bans found in r/testsubreddit
+2025-09-19 10:50:30,566 - MuteBannedUsersBot - INFO - Processed 0 conversations in r/testsubreddit
+2025-09-19 10:50:30,566 - MuteBannedUsersBot - INFO - Session complete: 0 conversations processed
+2025-09-19 10:50:30,566 - MuteBannedUsersBot - INFO - Cache stats: {'total_conversations': 0, 'last_24h': 0, 'last_7d': 0}
+2025-09-19 10:50:30,568 - MuteBannedUsersBot - WARNING - No Reddit username/password provided, using read-only access
+2025-09-19 10:50:30,568 - MuteBannedUsersBot - INFO - Connected to Reddit as: <Mock name='Reddit().user.me().name' id='140574160975104'>
+2025-09-19 10:50:30,568 - MuteBannedUsersBot - INFO - MuteBannedUsersBot initialized successfully
+2025-09-19 10:50:30,569 - MuteBannedUsersBot - WARNING - No Reddit username/password provided, using read-only access
+2025-09-19 10:50:30,570 - MuteBannedUsersBot - INFO - Connected to Reddit as: <MagicMock name='Reddit().user.me().name' id='140574158410848'>
+2025-09-19 10:50:30,570 - MuteBannedUsersBot - INFO - MuteBannedUsersBot initialized successfully
+2025-09-19 10:50:49,302 - MuteBannedUsersBot - WARNING - No Reddit username/password provided, using read-only access
+2025-09-19 10:50:49,302 - MuteBannedUsersBot - INFO - Connected to Reddit as: <Mock name='mock.user.me().name' id='140273969564272'>
+2025-09-19 10:50:49,303 - MuteBannedUsersBot - INFO - MuteBannedUsersBot initialized successfully
+2025-09-19 10:50:49,303 - MuteBannedUsersBot - INFO - Starting MuteBannedUsersBot...
+2025-09-19 10:50:49,303 - MuteBannedUsersBot - INFO - Running in DRY RUN mode - no actual actions will be taken
+2025-09-19 10:50:49,303 - MuteBannedUsersBot - INFO - Processing r/testsubreddit
+2025-09-19 10:50:49,303 - MuteBannedUsersBot - INFO - Found 1 recent Rule 7 bans in r/testsubreddit
+2025-09-19 10:50:49,303 - MuteBannedUsersBot - INFO - Processing modmail for 1 recently banned users
+2025-09-19 10:50:49,303 - MuteBannedUsersBot - INFO - Processing conversation conv123 from banned user u/testuser
+2025-09-19 10:50:49,303 - MuteBannedUsersBot - INFO - DRY RUN: Would respond and mute conversation with u/testuser
+2025-09-19 10:50:49,803 - MuteBannedUsersBot - INFO - Processed 1 conversations in r/testsubreddit
+2025-09-19 10:50:49,803 - MuteBannedUsersBot - INFO - Session complete: 1 conversations processed
+2025-09-19 10:50:49,804 - MuteBannedUsersBot - INFO - Cache stats: {'total_conversations': 1, 'last_24h': 1, 'last_7d': 1}
+2025-09-19 10:50:49,805 - MuteBannedUsersBot - WARNING - No Reddit username/password provided, using read-only access
+2025-09-19 10:50:49,806 - MuteBannedUsersBot - INFO - Connected to Reddit as: <Mock name='Reddit().user.me().name' id='140273965733056'>
+2025-09-19 10:50:49,806 - MuteBannedUsersBot - INFO - MuteBannedUsersBot initialized successfully
+2025-09-19 10:50:49,807 - MuteBannedUsersBot - WARNING - No Reddit username/password provided, using read-only access
+2025-09-19 10:50:49,808 - MuteBannedUsersBot - INFO - Connected to Reddit as: <MagicMock name='Reddit().user.me().name' id='140273968020368'>
+2025-09-19 10:50:49,808 - MuteBannedUsersBot - INFO - MuteBannedUsersBot initialized successfully
+2025-09-19 10:51:01,223 - MuteBannedUsersBot - WARNING - No Reddit username/password provided, using read-only access
+2025-09-19 10:51:01,223 - MuteBannedUsersBot - INFO - Connected to Reddit as: <MagicMock name='Reddit().user.me().name' id='140500573404336'>
+2025-09-19 10:51:01,223 - MuteBannedUsersBot - INFO - MuteBannedUsersBot initialized successfully
+2025-09-19 10:51:21,968 - MuteBannedUsersBot - WARNING - No Reddit username/password provided, using read-only access
+2025-09-19 10:51:21,969 - MuteBannedUsersBot - INFO - Connected to Reddit as: <MagicMock name='Reddit().user.me().name' id='139829678734464'>
+2025-09-19 10:51:21,969 - MuteBannedUsersBot - INFO - MuteBannedUsersBot initialized successfully
+2025-09-19 10:52:19,661 - MuteBannedUsersBot - ERROR - Missing required environment variables: ['REDDIT_CLIENT_ID', 'REDDIT_CLIENT_SECRET', 'REDDIT_USER_AGENT']
+2025-09-19 10:52:19,662 - MuteBannedUsersBot - ERROR - Failed to initialize Reddit connection: Required Reddit credentials not found
+2025-09-19 10:52:26,906 - MuteBannedUsersBot - WARNING - No Reddit username/password provided, using read-only access
+2025-09-19 10:52:26,907 - MuteBannedUsersBot - INFO - Connected to Reddit as: <Mock name='mock.user.me().name' id='140428911285776'>
+2025-09-19 10:52:26,907 - MuteBannedUsersBot - INFO - MuteBannedUsersBot initialized successfully
+2025-09-19 10:52:26,907 - MuteBannedUsersBot - INFO - Starting MuteBannedUsersBot...
+2025-09-19 10:52:26,907 - MuteBannedUsersBot - INFO - Running in DRY RUN mode - no actual actions will be taken
+2025-09-19 10:52:26,907 - MuteBannedUsersBot - INFO - Processing r/testsubreddit
+2025-09-19 10:52:26,907 - MuteBannedUsersBot - INFO - Found 1 recent Rule 7 bans in r/testsubreddit
+2025-09-19 10:52:26,907 - MuteBannedUsersBot - INFO - Processing modmail for 1 recently banned users
+2025-09-19 10:52:26,907 - MuteBannedUsersBot - INFO - Processing conversation conv123 from banned user u/testuser
+2025-09-19 10:52:26,907 - MuteBannedUsersBot - INFO - DRY RUN: Would respond and mute conversation with u/testuser
+2025-09-19 10:52:27,408 - MuteBannedUsersBot - INFO - Processed 1 conversations in r/testsubreddit
+2025-09-19 10:52:27,408 - MuteBannedUsersBot - INFO - Session complete: 1 conversations processed
+2025-09-19 10:52:27,408 - MuteBannedUsersBot - INFO - Cache stats: {'total_conversations': 1, 'last_24h': 1, 'last_7d': 1}
+2025-09-19 10:52:27,410 - MuteBannedUsersBot - WARNING - No Reddit username/password provided, using read-only access
+2025-09-19 10:52:27,410 - MuteBannedUsersBot - INFO - Connected to Reddit as: <Mock name='Reddit().user.me().name' id='140428908019792'>
+2025-09-19 10:52:27,410 - MuteBannedUsersBot - INFO - MuteBannedUsersBot initialized successfully
+2025-09-19 10:52:27,411 - MuteBannedUsersBot - WARNING - No Reddit username/password provided, using read-only access
+2025-09-19 10:52:27,412 - MuteBannedUsersBot - INFO - Connected to Reddit as: <MagicMock name='Reddit().user.me().name' id='140428905472096'>
+2025-09-19 10:52:27,412 - MuteBannedUsersBot - INFO - MuteBannedUsersBot initialized successfully
